@@ -3,3 +3,6 @@ function outputMessage(message) {
 }
 
 export default outputMessage;
+
+
+// continua in file esercizio4.js
