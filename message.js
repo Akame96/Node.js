@@ -1,7 +1,10 @@
-const clc = require("cli-color")
+const figlet = require('figlet');
 
-function outputMessage(message){
-    console.log(clc.green(` the message is: ${message}`))
-}
+figlet('Hello there!', function(err, data) {
+  if (err) {
+    console.log('Something went wrong...');
+    return;
+  }
+  console.log(data);
+});
 
-outputMessage('Hello, there!')
